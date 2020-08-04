@@ -1,0 +1,534 @@
+/* ----------------------------CSS Reset---------------------------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ---------------------------------------Fonts--------------------------- */
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/Gilroy-Bold/Gilroy-Bold.eot");
+  src: url("/fonts/Gilroy-Bold/Gilroy-Bold.woff") format("woff"),
+    url("/fonts/Gilroy-Bold/Gilroy-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/Gilroy-Light/Gilroy-Light.eot");
+  src: url("/fonts/Gilroy-Light/Gilroy-Light.woff") format("woff"),
+    url("/fonts/Gilroy-Medium/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/Gilroy-Medium/Gilroy-Medium.eot");
+  src: url("/fonts/Gilroy-Medium/Gilroy-Medium.woff") format("woff"),
+    url("/fonts/Gilroy-Medium/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("/fonts/Gilroy/Gilroy.eot");
+  src: url("/fonts/Gilroy/Gilroy.woff") format("woff"),
+    url("/fonts/Gilroy/Gilroy.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: Gilroy, serif;
+  background-color: #e5e5e5;
+}
+
+/* -------------------------Header----------------------------- */
+
+.header {
+  position: relative;
+  font-family: Gilroy, serif;
+}
+
+.header-logo {
+  position: absolute;
+  width: 104px;
+  height: 29px;
+}
+
+.header-logo .header-circle {
+  position: absolute;
+  top: -33px;
+  left: 345px;
+}
+
+.header-logo h1 {
+  position: absolute;
+  width: 104px;
+  height: 29px;
+  left: 116px;
+  top: -8px;
+
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24.1183px;
+  line-height: 29px;
+
+  text-align: center;
+
+  color: #222222;
+}
+
+.header-nav {
+  margin-top: 33px;
+  margin-left: 420px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-left: 27px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11.0889px;
+  line-height: 13px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: #73738d;
+}
+
+.header-nav a:hover {
+  color: black;
+}
+
+.header-button button {
+  width: 125px;
+  height: 40px;
+  border: 1px solid #1943ef;
+  border-radius: 33px 33px 33px 33px;
+  font-family: Gilroy, serif;
+  font-weight: 600;
+  position: absolute;
+  top: -25px;
+  right: -575px;
+}
+
+/* -----------------------About------------------------- */
+
+.about {
+  display: flex;
+  margin-top: 144px;
+  font-family: Gilroy, serif;
+  font-style: normal;
+  position: relative;
+}
+
+.about .about-circle {
+  position: absolute;
+  top: 250px;
+  left: -15px;
+}
+
+.about__info {
+  margin-left: 101px;
+}
+
+.about__info-header {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Gilroy;
+}
+
+.about__info-content {
+  margin-top: 16.5px;
+  font-size: 14.5px;
+}
+
+.about__info-email {
+  margin-top: 20px;
+}
+
+.about__info-email input {
+  width: 80%;
+  border-radius: 33px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  font-size: 11px;
+}
+
+.about__info-email button {
+  position: absolute;
+  bottom: 31px;
+  height: 40px;
+  width: 150px;
+  right: 30px;
+  border-radius: 33px;
+}
+
+.about__info-checkmarks {
+  display: flex;
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.about__info-checkmarks div:nth-child(2),
+.about__info-checkmarks div:last-child {
+  margin-left: 10px;
+}
+
+.about-image .phone {
+  position: absolute;
+  top: -100px;
+  left: 50px;
+  z-index: 9999;
+}
+
+.about-image .circle-phone-transparent {
+  display: block;
+  position: absolute;
+  top: -85px;
+  left: 70px;
+}
+
+.about-image .circle-phone-orange {
+  display: block;
+  position: absolute;
+  bottom: -155px;
+  right: 155px;
+}
+
+/* --------------------Reviews--------------------- */
+
+.reviews {
+  margin-top: 250px;
+}
+
+.reviews-header {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.reviews__content {
+  width: 500px;
+  height: 280px;
+  background-color: #fff;
+  margin: 94px auto 0;
+  position: relative;
+}
+
+.reviews__content-logo img {
+  display: block;
+  position: absolute;
+  top: -20%;
+  left: 37%;
+}
+
+.reviews__content-header {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reviews__content-text {
+  font-size: 14.5px;
+  width: 90%;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+.reviews__content-text p {
+  margin-top: 8px;
+}
+
+.reviews__content-signature {
+  width: 50%;
+  margin: 15px auto 0;
+  text-align: center;
+}
+
+.reviews-slider {
+  width: 20%;
+  display: flex;
+  text-align: center;
+  margin-left: 47%;
+  margin-top: 33px;
+}
+
+.slider-item {
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 5px;
+  /* #dbe5f1; */
+}
+
+.slider-item-active {
+  width: 15px;
+  height: 5.5px;
+  border-radius: 50%;
+  background-color: #26c296;
+  margin-left: 5px;
+}
+
+/* -------------------Appeal-------------------- */
+
+.appeal {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  margin-top: 120px;
+  z-index: 9999;
+}
+
+.appeal-info {
+  z-index: 9999;
+}
+
+.appeal-header {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 34px 0 0 22px;
+}
+
+.appeal-subtitle {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 0 35px 22px;
+}
+
+.appeal button {
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  background-color: #26c296;
+  border-radius: 33px;
+  border: none;
+  outline: none;
+  width: 155px;
+  height: 40px;
+}
+
+.appeal button:hover {
+  background-color: green;
+}
+
+.circle-appeal {
+  position: relative;
+}
+
+.circle-appeal img {
+  display: block;
+  position: absolute;
+  top: -125px;
+  left: 60px;
+}
+
+/* ---------------------------Footer---------------------- */
+
+.footer {
+  display: flex;
+  margin-left: 115px;
+  margin-top: 70px;
+}
+
+.relationz-section-header,
+.company-section-header,
+.support-section-header,
+.legal-section-header {
+  font-size: 16.5px;
+  font-weight: 600;
+}
+
+.company-section,
+.support-section,
+.legal-section {
+  margin-left: 120px;
+}
+
+.relationz-section-info,
+.company-section-info,
+.support-section-info,
+.legal-section-info {
+  font-size: 11px;
+  color: #73738d;
+}
+
+.relationz-section-info p,
+.company-section-info p,
+.support-section-info p,
+.legal-section-info p {
+  margin-top: 12px;
+}
+
+.relationz-section-info p:nth-child(1),
+.company-section-info p:nth-child(1),
+.support-section-info p:nth-child(1),
+.legal-section-info p:nth-child(1) {
+  margin-top: 16px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 85px;
+}
+
+.copyright-title {
+  font-size: 16.5px;
+  font-weight: bold;
+}
+
+.copyright-subtitle {
+  margin-top: 16px;
+  font-size: 11px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+/* -----------------MEDIA------------------ */
+
+/* @media (max-width: 540px) {
+  .appeal button {
+    top: 160px;
+    right: 115%;
+  }
+} */
